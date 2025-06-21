@@ -13,7 +13,7 @@ const Footer = () => {
               <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
                 <Zap className="h-6 w-6 text-white" />
               </div>
-              <span className="text-xl font-bold">creser.ai</span>
+              <span className="text-xl font-bold">wingso.ai</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
               Empowering SMBs and small brands with intelligent marketing solutions. 
@@ -65,7 +65,7 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-gray-300">
                 <Mail className="h-4 w-4" />
-                <span>hello@creser.ai</span>
+                <span>hello@wingso.ai</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-300">
                 <Phone className="h-4 w-4" />
@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 creser.ai. All rights reserved.</p>
+          <p>&copy; 2025 wingso.ai. All rights reserved.</p>
         </div>
       </div>
     </footer>

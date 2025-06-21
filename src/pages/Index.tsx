@@ -1,175 +1,166 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+
+import { ChevronDown, CheckCircle, MessageCircle, TrendingUp, Calendar, BarChart3, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  MessageSquare,
-  TrendingUp,
-  FileText,
-  Calendar,
-  BarChart3,
-  DollarSign
-} from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger
-} from "@/components/ui/accordion"
-
-const faqData = [
-  {
-    question: "What is creser.ai?",
-    answer: "creser.ai is an AI-powered marketing intelligence platform designed for SMBs and small brands. It provides insights, automation, and growth strategies to help businesses succeed."
-  },
-  {
-    question: "How does creser.ai use AI?",
-    answer: "Our AI algorithms analyze marketing data, predict trends, and automate decision-making processes to optimize your marketing efforts."
-  },
-  {
-    question: "Is creser.ai suitable for my business?",
-    answer: "creser.ai is designed for SMBs and small brands across various industries. Whether you're in e-commerce, SaaS, or retail, our platform can help you grow."
-  },
-  {
-    question: "Can I try creser.ai for free?",
-    answer: "Yes, we offer a free trial so you can experience the benefits of our platform before committing to a subscription."
-  },
-  {
-    question: "What kind of support do you offer?",
-    answer: "We provide email and chat support to all our users. Our team is here to help you get the most out of creser.ai."
-  }
-];
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  const features = [
+    {
+      icon: MessageCircle,
+      title: "AI Chat Assistant",
+      description: "Get instant marketing insights and recommendations"
+    },
+    {
+      icon: TrendingUp,
+      title: "Trends Engine",
+      description: "Stay ahead with real-time market trend analysis"
+    },
+    {
+      icon: Calendar,
+      title: "Content Calendar",
+      description: "Automated content planning and scheduling"
+    },
+    {
+      icon: BarChart3,
+      title: "Advanced Analytics",
+      description: "Deep insights into your marketing performance"
+    }
+  ];
+
+  const faqs = [
+    {
+      question: "What is AI CMO and how does it work?",
+      answer: "AI CMO is an intelligent marketing platform that acts as your virtual Chief Marketing Officer. It analyzes your business data, market trends, and customer behavior to provide actionable marketing insights and automate routine marketing tasks."
+    },
+    {
+      question: "Is AI CMO suitable for small businesses?",
+      answer: "Absolutely! AI CMO is specifically designed for SMBs and small brands. We understand the unique challenges small businesses face and provide enterprise-level marketing intelligence at an affordable price point."
+    },
+    {
+      question: "What kind of marketing insights can I expect?",
+      answer: "You'll get insights on customer segmentation, content performance, optimal posting times, trending topics in your industry, competitor analysis, and personalized recommendations to improve your marketing ROI."
+    },
+    {
+      question: "How quickly can I see results?",
+      answer: "Most users see initial insights within 24-48 hours of setup. Comprehensive trend analysis and deeper insights develop over 2-4 weeks as our AI learns more about your business and audience."
+    },
+    {
+      question: "Do I need technical expertise to use AI CMO?",
+      answer: "Not at all! AI CMO is designed to be user-friendly with an intuitive interface. Our AI chat assistant guides you through everything, and our support team is always ready to help."
+    },
+    {
+      question: "What's included in the pricing?",
+      answer: "Our plans include the AI chat assistant, trends engine, content calendar, analytics dashboard, and customer support. We offer flexible pricing tiers based on your business size and needs."
+    }
+  ];
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       <Header />
       
-      <main className="pt-16">
-        {/* Hero Section */}
-        <section className="relative bg-gradient-to-r from-blue-600 to-purple-600 text-white overflow-hidden">
-          <div className="absolute inset-0 bg-black opacity-20"></div>
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-            <div className="text-center">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
-                Your Intelligent
-                <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-                  Marketing Partner
-                </span>
-              </h1>
-              <p className="text-xl md:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed">
-                Transform your business with creser.ai - an AI-powered marketing intelligence platform designed specifically for SMBs and small brands. Get insights, automation, and growth strategies that work.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg">
-                  Start Free Trial
-                </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8 py-4 text-lg">
-                  Watch Demo
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Features Preview */}
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Everything You Need to Grow
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                creser.ai combines powerful AI with intuitive design to give you the marketing intelligence you need to succeed.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: MessageSquare,
-                  title: "AI Chat Assistant",
-                  description: "Get instant marketing advice and strategy recommendations through our intelligent chat interface."
-                },
-                {
-                  icon: TrendingUp,
-                  title: "Trends Engine",
-                  description: "Stay ahead of the curve with real-time trend analysis and predictive insights for your industry."
-                },
-                {
-                  icon: FileText,
-                  title: "Content Creation",
-                  description: "Generate high-quality marketing content tailored to your brand voice and audience."
-                },
-                {
-                  icon: Calendar,
-                  title: "Content Calendar",
-                  description: "Plan, schedule, and manage your content strategy with our intelligent calendar system."
-                },
-                {
-                  icon: BarChart3,
-                  title: "Advanced Analytics",
-                  description: "Track performance, measure ROI, and optimize your marketing campaigns with detailed insights."
-                },
-                {
-                  icon: DollarSign,
-                  title: "Cost Optimization",
-                  description: "Maximize your marketing budget with AI-driven cost analysis and optimization recommendations."
-                }
-              ].map((feature, index) => (
-                <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-3 rounded-lg w-fit mb-6">
-                    <feature.icon className="h-6 w-6 text-white" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">{feature.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Ready to Transform Your Marketing?
-            </h2>
-            <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-              Join thousands of SMBs already using creser.ai to drive growth and increase revenue.
+      {/* Hero Section */}
+      <section className="pt-24 pb-16 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              Your AI-Powered
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                {" "}Chief Marketing Officer
+              </span>
+            </h1>
+            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+              Transform your marketing strategy with intelligent insights, automated content planning, 
+              and real-time trend analysis. Built specifically for SMBs and growing brands.
             </p>
-            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 font-semibold px-8 py-4 text-lg">
-              Get Started Today
-            </Button>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-xl text-gray-600">
-                Everything you need to know about creser.ai
-              </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+                Start Free Trial
+              </Button>
+              <Button size="lg" variant="outline">
+                Watch Demo
+              </Button>
             </div>
-
-            <Accordion type="single" collapsible>
-              {faqData.map((item, index) => (
-                <AccordionItem key={index} value={`item-${index}`}>
-                  <AccordionTrigger className="text-lg font-semibold text-gray-900 hover:underline">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-gray-600">
-                    {item.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+
+      {/* Features Preview */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Everything You Need to Scale Your Marketing
+            </h2>
+            <p className="text-lg text-gray-600">
+              Our comprehensive AI platform covers all aspects of modern marketing
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {features.map((feature, index) => (
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <CardContent className="p-6 text-center">
+                  <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-3 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                    <feature.icon className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+                  <p className="text-gray-600">{feature.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-gray-600">
+              Everything you need to know about AI CMO
+            </p>
+          </div>
+          
+          <Accordion type="single" collapsible className="w-full">
+            {faqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionTrigger className="text-left">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Ready to Transform Your Marketing?
+          </h2>
+          <p className="text-xl text-blue-100 mb-8">
+            Join hundreds of growing businesses already using AI CMO
+          </p>
+          <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
+            Get Started Today
+          </Button>
+        </div>
+      </section>
 
       <Footer />
     </div>
