@@ -30,19 +30,19 @@ const About = () => {
 
   const team = [
     {
-      name: "Sarah Chen",
+      name: "Prateek Agrawal",
       role: "CEO & Co-Founder",
-      description: "Former marketing director at Fortune 500 companies with 15+ years of experience"
+      description: "2+ years of experience as Product Manager, B.Tech from IIT Madras"
     },
     {
-      name: "Marcus Rodriguez",
+      name: "To be announced",
       role: "CTO & Co-Founder", 
-      description: "AI/ML expert with previous roles at Google and Microsoft, specializing in marketing automation"
+      description: "Details coming soon"
     },
     {
-      name: "Emily Watson",
-      role: "Head of Product",
-      description: "Product strategist with deep expertise in SMB marketing tools and user experience"
+      name: "To be announced",
+      role: "CPO & Co-Founder",
+      description: "Details coming soon"
     }
   ];
 
@@ -55,7 +55,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About AI CMO
+              About wingso.ai
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               We're building an AI CMO that works as a marketing intelligence layer for SMBs and small brands, 
@@ -74,7 +74,7 @@ const About = () => {
           
           <div className="prose prose-lg mx-auto text-gray-600">
             <p className="text-lg leading-relaxed mb-6">
-              Founded in 2024, AI CMO was born from a simple observation: while large enterprises have teams of marketing experts 
+              Founded in 2025, wingso.ai was born from a simple observation: while large enterprises have teams of marketing experts 
               and expensive analytics tools, small and medium businesses often struggle with limited resources and fragmented marketing efforts.
             </p>
             
@@ -85,7 +85,7 @@ const About = () => {
             </p>
             
             <p className="text-lg leading-relaxed mb-6">
-              Today, AI CMO serves as an intelligent marketing layer that provides the strategic insights, trend analysis, 
+              Today, wingso.ai serves as an intelligent marketing layer that provides the strategic insights, trend analysis, 
               and automated optimization that were previously only available to companies with massive marketing budgets. 
               We're democratizing marketing intelligence, one small business at a time.
             </p>
@@ -122,7 +122,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
-            <p className="text-lg text-gray-600">The experts behind AI CMO</p>
+            <p className="text-lg text-gray-600">The experts behind wingso.ai</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -131,7 +131,7 @@ const About = () => {
                 <CardContent className="p-6 text-center">
                   <div className="w-24 h-24 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <span className="text-2xl font-bold text-white">
-                      {member.name.split(' ').map(n => n[0]).join('')}
+                      {member.name === "To be announced" ? "TBA" : member.name.split(' ').map(n => n[0]).join('')}
                     </span>
                   </div>
                   <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
