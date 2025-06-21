@@ -1,168 +1,208 @@
 
-import { Users, Target, Lightbulb, Award } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Users, Target, Award, Zap } from "lucide-react";
 
 const About = () => {
-  const values = [
-    {
-      icon: Target,
-      title: "Mission-Driven",
-      description: "Democratizing enterprise-level marketing intelligence for small and medium businesses"
-    },
-    {
-      icon: Lightbulb,
-      title: "Innovation First",
-      description: "Leveraging cutting-edge AI to solve real marketing challenges faced by growing businesses"
-    },
-    {
-      icon: Users,
-      title: "Customer-Centric",
-      description: "Building solutions that truly understand and address the unique needs of SMBs"
-    },
-    {
-      icon: Award,
-      title: "Excellence",
-      description: "Committed to delivering exceptional results and continuous improvement"
-    }
-  ];
-
-  const team = [
+  const teamMembers = [
     {
       name: "Prateek Agrawal",
       role: "CEO & Co-Founder",
-      description: "2+ years of experience as Product Manager, B.Tech from IIT Madras"
+      description: "2+ years of experience as Product Manager, B.Tech from IIT Madras",
+      image: "/placeholder.svg"
     },
     {
       name: "To be announced",
-      role: "CTO & Co-Founder", 
-      description: "Details coming soon"
+      role: "CTO & Co-Founder",
+      description: "Technical leadership and innovation",
+      image: "/placeholder.svg"
     },
     {
-      name: "To be announced",
+      name: "To be announced", 
       role: "CPO & Co-Founder",
-      description: "Details coming soon"
+      description: "Product strategy and development",
+      image: "/placeholder.svg"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50">
       <Header />
       
-      {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-blue-50 via-white to-purple-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About wingso.ai
-            </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              We're building an AI CMO that works as a marketing intelligence layer for SMBs and small brands, 
-              making sophisticated marketing strategies accessible to everyone.
-            </p>
+      <main className="pt-20">
+        {/* Hero Section */}
+        <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                About creser.ai
+              </h1>
+              <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+                We are building an AI CMO which works as a marketing intelligence layer for SMBs and small brands
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Our Story */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
-          </div>
-          
-          <div className="prose prose-lg mx-auto text-gray-600">
-            <p className="text-lg leading-relaxed mb-6">
-              Founded in 2025, wingso.ai was born from a simple observation: while large enterprises have teams of marketing experts 
-              and expensive analytics tools, small and medium businesses often struggle with limited resources and fragmented marketing efforts.
-            </p>
-            
-            <p className="text-lg leading-relaxed mb-6">
-              Our founders, having worked at both Fortune 500 companies and scrappy startups, recognized that the gap between 
-              enterprise marketing capabilities and SMB marketing tools was only growing wider. They set out to bridge this gap 
-              with artificial intelligence.
-            </p>
-            
-            <p className="text-lg leading-relaxed mb-6">
-              Today, wingso.ai serves as an intelligent marketing layer that provides the strategic insights, trend analysis, 
-              and automated optimization that were previously only available to companies with massive marketing budgets. 
-              We're democratizing marketing intelligence, one small business at a time.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Values */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Values</h2>
-            <p className="text-lg text-gray-600">The principles that guide everything we do</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardContent className="p-6 text-center">
-                  <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-3 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                    <value.icon className="h-8 w-8 text-white" />
+        {/* Mission Section */}
+        <section className="py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                  Our Mission
+                </h2>
+                <p className="text-lg text-gray-600 mb-6">
+                  At creser.ai, we believe that every small and medium business deserves access to world-class marketing intelligence. Our AI-powered platform democratizes sophisticated marketing strategies, making them accessible and affordable for businesses of all sizes.
+                </p>
+                <p className="text-lg text-gray-600">
+                  We're revolutionizing how SMBs approach marketing by providing an intelligent layer that analyzes data, predicts trends, and automates decision-making processes that were once only available to large enterprises.
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center">
+                    <div className="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                      <Target className="h-8 w-8 text-blue-600" />
+                    </div>
+                    <h3 className="font-semibold text-gray-900">Targeted</h3>
+                    <p className="text-sm text-gray-600">Precision marketing</p>
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">{value.title}</h3>
-                  <p className="text-gray-600">{value.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
-            <p className="text-lg text-gray-600">The experts behind wingso.ai</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <Card key={index} className="border-0 shadow-lg">
-                <CardContent className="p-6 text-center">
-                  <div className="w-24 h-24 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">
-                      {member.name === "To be announced" ? "TBA" : member.name.split(' ').map(n => n[0]).join('')}
-                    </span>
+                  <div className="text-center">
+                    <div className="bg-purple-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                      <Zap className="h-8 w-8 text-purple-600" />
+                    </div>
+                    <h3 className="font-semibold text-gray-900">Intelligent</h3>
+                    <p className="text-sm text-gray-600">AI-powered insights</p>
                   </div>
-                  <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                  <p className="text-blue-600 font-medium mb-3">{member.role}</p>
-                  <p className="text-gray-600">{member.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Work With Us?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Join the revolution in SMB marketing intelligence
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Start Your Free Trial
-            </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-              Contact Us
-            </button>
+        {/* Story Section */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Our Story
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Founded in 2025, creser.ai emerged from a simple observation: small businesses were struggling to compete in an increasingly complex digital marketing landscape.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                  <Users className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Problem Identified</h3>
+                <p className="text-gray-600">
+                  We noticed that SMBs lacked access to sophisticated marketing intelligence tools that could help them compete effectively.
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                  <Zap className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Solution Created</h3>
+                <p className="text-gray-600">
+                  We developed an AI CMO that works as an intelligent marketing layer, providing insights and automation previously available only to large corporations.
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                  <Award className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Impact Delivered</h3>
+                <p className="text-gray-600">
+                  Today, we're empowering hundreds of small businesses to make data-driven marketing decisions and achieve sustainable growth.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        {/* Team Section */}
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Meet Our Team
+              </h2>
+              <p className="text-lg text-gray-600">
+                The passionate individuals building the future of marketing intelligence
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {teamMembers.map((member, index) => (
+                <div key={index} className="bg-white rounded-2xl shadow-lg p-8 text-center">
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="w-24 h-24 rounded-full mx-auto mb-6 object-cover"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    {member.name}
+                  </h3>
+                  <p className="text-blue-600 font-medium mb-4">
+                    {member.role}
+                  </p>
+                  <p className="text-gray-600">
+                    {member.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Values Section */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Our Values
+              </h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Innovation</h3>
+                <p className="text-gray-600">
+                  We constantly push the boundaries of what's possible in marketing technology.
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Accessibility</h3>
+                <p className="text-gray-600">
+                  We make sophisticated tools accessible to businesses of all sizes.
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Transparency</h3>
+                <p className="text-gray-600">
+                  We believe in clear, honest communication and transparent AI processes.
+                </p>
+              </div>
+              
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Impact</h3>
+                <p className="text-gray-600">
+                  We measure our success by the growth and success of our clients.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 
       <Footer />
     </div>
