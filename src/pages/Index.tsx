@@ -1,7 +1,7 @@
-
 import { ChevronDown, CheckCircle, MessageCircle, TrendingUp, Calendar, BarChart3, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import {
   Accordion,
   AccordionContent,
@@ -81,9 +81,11 @@ const Index = () => {
               and real-time trend analysis. Built specifically for SMBs and growing brands.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                Start Free Trial
-              </Button>
+              <Link to="/signup">
+                <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+                  Start Free Trial
+                </Button>
+              </Link>
               <Button size="lg" variant="outline">
                 Watch Demo
               </Button>
@@ -156,9 +158,11 @@ const Index = () => {
           <p className="text-xl text-blue-100 mb-8">
             Join hundreds of growing businesses already using AI CMO
           </p>
-          <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
-            Get Started Today
-          </Button>
+          <Link to="/signup">
+            <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
+              Get Started Today
+            </Button>
+          </Link>
         </div>
       </section>
 
