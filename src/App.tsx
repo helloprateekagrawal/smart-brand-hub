@@ -13,6 +13,8 @@ import Signup from "./pages/Signup";
 import Signin from "./pages/Signin";
 import CompanyDetails from "./pages/CompanyDetails";
 import MainApp from "./pages/MainApp";
+import ContentPlan from "./pages/ContentPlan";
+import ContentPreview from "./pages/ContentPreview";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +35,8 @@ const App = () => (
           <Route path="/signin" element={<Signin />} />
           <Route path="/company-details" element={<CompanyDetails />} />
           <Route path="/app" element={<MainApp />} />
+          <Route path="/content-plan" element={<ContentPlan />} />
+          <Route path="/content-preview" element={<ContentPreview />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

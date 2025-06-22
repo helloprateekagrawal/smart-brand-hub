@@ -1,13 +1,35 @@
 
-import { Link } from "react-router-dom";
-import { Zap, MessageCircle, TrendingUp, Calendar, BarChart3, User, Settings, LogOut } from "lucide-react";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { Zap, MessageCircle, TrendingUp, Calendar, BarChart3, User, Settings, LogOut, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Textarea } from "@/components/ui/textarea";
 
 const MainApp = () => {
+  const [marketingIntent, setMarketingIntent] = useState("");
+  const navigate = useNavigate();
+
+  const sampleIntents = [
+    "Let my customers know about my upcoming new coffee products",
+    "Quick sales of my furnitures for the upcoming Diwali season",
+    "Create brand awareness for my Food brand in and around Thane, Mumbai",
+    "Grow my dental services by more than 10% in Hyderabad"
+  ];
+
   const handleLogout = () => {
     // TODO: Implement logout logic
     console.log("Logging out...");
+  };
+
+  const handleGenerate = () => {
+    if (marketingIntent.trim()) {
+      navigate("/content-plan", { state: { marketingIntent } });
+    }
+  };
+
+  const handleSampleClick = (sample: string) => {
+    setMarketingIntent(sample);
   };
 
   return (
@@ -55,6 +77,49 @@ const MainApp = () => {
           <p className="text-lg text-gray-600">
             Your AI-powered marketing intelligence platform is ready to help you grow your business.
           </p>
+        </div>
+
+        {/* Marketing Intent Section */}
+        <div className="mb-8">
+          <Card>
+            <CardHeader>
+              <CardTitle>What's your marketing intent today?</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <Textarea
+                placeholder="Describe your marketing goals and objectives..."
+                value={marketingIntent}
+                onChange={(e) => setMarketingIntent(e.target.value)}
+                className="min-h-[100px]"
+              />
+              
+              {/* Sample Intent Examples */}
+              <div className="space-y-2">
+                <p className="text-sm font-medium text-gray-700">Sample marketing intents:</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                  {sampleIntents.map((intent, index) => (
+                    <Button
+                      key={index}
+                      variant="outline"
+                      className="text-left h-auto p-3 justify-start"
+                      onClick={() => handleSampleClick(intent)}
+                    >
+                      <span className="text-sm">{intent}</span>
+                    </Button>
+                  ))}
+                </div>
+              </div>
+
+              <Button 
+                onClick={handleGenerate}
+                disabled={!marketingIntent.trim()}
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+              >
+                <Send className="h-4 w-4 mr-2" />
+                Generate Marketing Plan
+              </Button>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Feature Cards */}
