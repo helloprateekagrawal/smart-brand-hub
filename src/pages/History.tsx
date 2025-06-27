@@ -57,8 +57,8 @@ const mockCampaigns: Campaign[] = [
 const History = () => {
   const [campaigns, setCampaigns] = useState<Campaign[]>(mockCampaigns);
   const [searchTerm, setSearchTerm] = useState("");
-  const [dateFilter, setDateFilter] = useState("");
-  const [statusFilter, setStatusFilter] = useState("");
+  const [dateFilter, setDateFilter] = useState("all");
+  const [statusFilter, setStatusFilter] = useState("all");
   const [expandedCampaign, setExpandedCampaign] = useState<string | null>(null);
 
   const getStatusColor = (status: Campaign['status']) => {
@@ -79,7 +79,7 @@ const History = () => {
 
   const filteredCampaigns = campaigns.filter(campaign => {
     const matchesSearch = campaign.name.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesStatus = !statusFilter || campaign.status === statusFilter;
+    const matchesStatus = statusFilter === "all" || campaign.status === statusFilter;
     return matchesSearch && matchesStatus;
   });
 
@@ -150,7 +150,7 @@ const History = () => {
                   <SelectValue placeholder="Filter by date" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All dates</SelectItem>
+                  <SelectItem value="all">All dates</SelectItem>
                   <SelectItem value="last_week">Last week</SelectItem>
                   <SelectItem value="last_month">Last month</SelectItem>
                   <SelectItem value="last_3_months">Last 3 months</SelectItem>
@@ -162,7 +162,7 @@ const History = () => {
                   <SelectValue placeholder="Filter by status" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All statuses</SelectItem>
+                  <SelectItem value="all">All statuses</SelectItem>
                   <SelectItem value="posted">Posted</SelectItem>
                   <SelectItem value="scheduled">Scheduled</SelectItem>
                   <SelectItem value="not_scheduled">Not Scheduled</SelectItem>
@@ -200,7 +200,7 @@ const History = () => {
 
                 {expandedCampaign === campaign.id && (
                   <div className="mt-6 border-t pt-6">
-                    <Tabs defaultValue="instagram" className="w-full">
+                    <Tabs defaultValue="raw" className="w-full">
                       <TabsList className="grid w-full grid-cols-2">
                         <TabsTrigger value="raw">Raw Format</TabsTrigger>
                         <TabsTrigger value="instagram">Instagram Format</TabsTrigger>
