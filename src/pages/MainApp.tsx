@@ -1,7 +1,6 @@
-
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Zap, MessageCircle, TrendingUp, Calendar, BarChart3, User, Settings, LogOut, Send } from "lucide-react";
+import { Zap, MessageCircle, TrendingUp, Calendar, BarChart3, User, Settings, LogOut, Send, History } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
@@ -32,6 +31,10 @@ const MainApp = () => {
     setMarketingIntent(sample);
   };
 
+  const handleProfileClick = () => {
+    navigate("/onboarding/company-info");
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -50,7 +53,13 @@ const MainApp = () => {
 
             {/* User Menu */}
             <div className="flex items-center space-x-4">
-              <Button variant="ghost" size="sm">
+              <Link to="/history">
+                <Button variant="ghost" size="sm">
+                  <History className="h-4 w-4 mr-2" />
+                  History
+                </Button>
+              </Link>
+              <Button variant="ghost" size="sm" onClick={handleProfileClick}>
                 <User className="h-4 w-4 mr-2" />
                 Profile
               </Button>
