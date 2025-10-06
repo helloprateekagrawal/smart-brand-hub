@@ -55,11 +55,11 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About wingso.ai
+              About silversuits.ai
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              We're building an AI CMO that works as a marketing intelligence layer for SMBs and small brands, 
-              making sophisticated marketing strategies accessible to everyone.
+              We're building AI Coworkers for BFSI organizations, leveraging swarms of intelligent agents 
+              to create contextual intelligence that transforms how financial institutions operate and scale.
             </p>
           </div>
         </div>
@@ -74,20 +74,20 @@ const About = () => {
           
           <div className="prose prose-lg mx-auto text-gray-600">
             <p className="text-lg leading-relaxed mb-6">
-              Founded in 2025, wingso.ai was born from a simple observation: while large enterprises have teams of marketing experts 
-              and expensive analytics tools, small and medium businesses often struggle with limited resources and fragmented marketing efforts.
+              Founded in 2025, silversuits.ai was born from deep experience in Fortune 500 BFSI companies where our founders 
+              saved millions by dramatically improving operational workflows and reducing inefficiencies.
             </p>
             
             <p className="text-lg leading-relaxed mb-6">
-              Our founders, having worked at both Fortune 500 companies and scrappy startups, recognized that the gap between 
-              enterprise marketing capabilities and SMB marketing tools was only growing wider. They set out to bridge this gap 
-              with artificial intelligence.
+              Having witnessed the massive potential of AI in transforming financial services operations, our team—led by 
+              <span className="font-semibold"> IIT Madras</span> alumni—set out to democratize enterprise-grade AI intelligence 
+              for BFSI organizations of all sizes.
             </p>
             
             <p className="text-lg leading-relaxed mb-6">
-              Today, wingso.ai serves as an intelligent marketing layer that provides the strategic insights, trend analysis, 
-              and automated optimization that were previously only available to companies with massive marketing budgets. 
-              We're democratizing marketing intelligence, one small business at a time.
+              Today, silversuits.ai deploys swarms of specialized AI agents that build contextual intelligence across BFSI functions. 
+              From customer acquisition to compliance, from risk assessment to accelerated development cycles—we're transforming 
+              how financial institutions scale their operations while maintaining the highest standards of security and regulatory compliance.
             </p>
           </div>
         </div>
@@ -122,7 +122,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
-            <p className="text-lg text-gray-600">The experts behind wingso.ai</p>
+            <p className="text-lg text-gray-600">The experts behind silversuits.ai</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -148,17 +148,17 @@ const About = () => {
       <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Work With Us?
+            Ready to Transform Your BFSI Operations?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Join the revolution in SMB marketing intelligence
+            Join forward-thinking financial institutions scaling with AI intelligence
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Start Your Free Trial
-            </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-              Contact Us
+            <button 
+              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              onClick={() => window.open('https://wa.me/919876543210?text=Hello%20Prateek%2C%20I%20would%20like%20to%20discuss%20more%21', '_blank')}
+            >
+              Let's Get Started
             </button>
           </div>
         </div>

@@ -14,29 +14,29 @@ const Contact = () => {
       icon: Mail,
       title: "Email Us",
       description: "Get in touch with our team",
-      detail: "hello@aicmo.com",
+      detail: "hello@silversuits.ai",
       action: "Send Email"
     },
     {
       icon: Phone,
       title: "Call Us",
       description: "Speak with our experts",
-      detail: "+1 (555) 123-4567",
+      detail: "+91-7381732333",
       action: "Call Now"
     },
     {
       icon: MessageCircle,
-      title: "Live Chat",
-      description: "Chat with our support team",
-      detail: "Available 24/7",
-      action: "Start Chat"
+      title: "WhatsApp",
+      description: "Chat with us directly",
+      detail: "Coming Soon",
+      action: "Coming Soon"
     },
     {
       icon: Headphones,
       title: "Support Center",
       description: "Browse our help resources",
-      detail: "Self-service options",
-      action: "Visit Center"
+      detail: "Coming Soon",
+      action: "Coming Soon"
     }
   ];
 
@@ -44,17 +44,17 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Address",
-      value: "123 Innovation Drive, San Francisco, CA 94105"
+      value: "Level 2, Imperium Building, Vijay Nagar, MIDC, Marol, Andheri East, Mumbai - 400059"
     },
     {
       icon: Clock,
       label: "Business Hours",
-      value: "Monday - Friday: 9:00 AM - 6:00 PM PST"
+      value: "Monday - Friday: 9:00 AM - 6:00 PM IST"
     },
     {
       icon: Users,
       label: "Team Size",
-      value: "50+ Marketing & AI Experts"
+      value: "Expert AI & BFSI Team"
     }
   ];
 
@@ -70,8 +70,8 @@ const Contact = () => {
               Get in Touch
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Have questions about AI CMO? We'd love to hear from you. 
-              Our team is here to help you transform your marketing strategy.
+              Have questions about AI Agents for BFSI? We'd love to hear from you. 
+              Our team is here to help you transform your financial services operations.
             </p>
           </div>
         </div>

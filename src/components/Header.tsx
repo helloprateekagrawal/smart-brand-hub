@@ -11,7 +11,7 @@ const Header = () => {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "Features", href: "/features" },
+    { name: "Use Cases", href: "/use-cases" },
     { name: "Blog", href: "/blog" },
     { name: "Contact Us", href: "/contact" },
   ];
@@ -28,7 +28,7 @@ const Header = () => {
               <Zap className="h-6 w-6 text-white" />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              wingso.ai
+              silversuits.ai
             </span>
           </Link>
 
@@ -51,11 +51,12 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Link to="/signup">
-              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                Get Started
-              </Button>
-            </Link>
+            <Button 
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+              onClick={() => window.open('https://wa.me/919876543210?text=Hello%20Prateek%2C%20I%20would%20like%20to%20discuss%20more%21', '_blank')}
+            >
+              Explore With Us
+            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -89,11 +90,12 @@ const Header = () => {
                 </Link>
               ))}
               <div className="pt-2">
-                <Link to="/signup">
-                  <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                    Get Started
-                  </Button>
-                </Link>
+                <Button 
+                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                  onClick={() => window.open('https://wa.me/919876543210?text=Hello%20Prateek%2C%20I%20would%20like%20to%20discuss%20more%21', '_blank')}
+                >
+                  Explore With Us
+                </Button>
               </div>
             </div>
           </div>

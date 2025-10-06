@@ -13,11 +13,11 @@ const Footer = () => {
               <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
                 <Zap className="h-6 w-6 text-white" />
               </div>
-              <span className="text-xl font-bold">wingso.ai</span>
+              <span className="text-xl font-bold">silversuits.ai</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
-              Empowering SMBs and small brands with intelligent marketing solutions. 
-              Our AI CMO works as your marketing intelligence layer to drive growth and success.
+              AI Coworkers for BFSI - Building contextual intelligence that scales. 
+              Transforming financial services through intelligent agent swarms.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -47,8 +47,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/features" className="text-gray-300 hover:text-white transition-colors">
-                  Features
+                <Link to="/use-cases" className="text-gray-300 hover:text-white transition-colors">
+                  Use Cases
                 </Link>
               </li>
               <li>
@@ -65,7 +65,7 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-gray-300">
                 <Mail className="h-4 w-4" />
-                <span>hello@wingso.ai</span>
+                <span>hello@silversuits.ai</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-300">
                 <Phone className="h-4 w-4" />
@@ -73,14 +73,14 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2 text-gray-300">
                 <MapPin className="h-4 w-4" />
-                <span>San Francisco, CA</span>
+                <span>Bangalore, IN</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 wingso.ai. All rights reserved.</p>
+          <p>&copy; 2025 silversuits.ai. All rights reserved.</p>
         </div>
       </div>
     </footer>

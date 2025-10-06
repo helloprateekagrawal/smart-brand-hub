@@ -1,4 +1,4 @@
-import { ChevronDown, CheckCircle, MessageCircle, TrendingUp, Calendar, BarChart3, DollarSign } from "lucide-react";
+import { ChevronDown, CheckCircle, MessageCircle, TrendingUp, Calendar, BarChart3, DollarSign, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -14,51 +14,74 @@ import Footer from "@/components/Footer";
 const Index = () => {
   const features = [
     {
-      icon: MessageCircle,
-      title: "AI Chat Assistant",
-      description: "Get instant marketing insights and recommendations"
-    },
-    {
       icon: TrendingUp,
-      title: "Trends Engine",
-      description: "Stay ahead with real-time market trend analysis"
+      title: "Massive Scale with Limited Resources",
+      description: "Deploy AI Coworkers to handle high-volume tasks, enabling your team to scale operations without proportional headcount increases"
     },
     {
-      icon: Calendar,
-      title: "Content Calendar",
-      description: "Automated content planning and scheduling"
+      icon: Users,
+      title: "Increased User Acquisition & Retention",
+      description: "AI Agent swarms discover dormant customers, re-engage inactive users, and identify new prospects with precision targeting"
     },
     {
       icon: BarChart3,
-      title: "Advanced Analytics",
-      description: "Deep insights into your marketing performance"
+      title: "Win-Win Upselling & Cross-Selling",
+      description: "Context-aware agents identify optimal opportunities for product expansion that genuinely benefit both customers and business metrics"
+    },
+    {
+      icon: MessageCircle,
+      title: "Faster Time-to-Market",
+      description: "Development and QA Testing agents work in tandem with Safety Agents to accelerate go-to-PROD cycles while maintaining quality and compliance"
+    }
+  ];
+
+  const agents = [
+    {
+      title: "Discovery Agent",
+      description: "Identifies new customers and re-engages dormant users through intelligent pattern recognition"
+    },
+    {
+      title: "Win Agent",
+      description: "Converts prospects into customers using contextual intelligence and optimal engagement strategies"
+    },
+    {
+      title: "Loyalty Agent",
+      description: "Builds lasting relationships through personalized upsell and cross-sell opportunities that add genuine value"
+    },
+    {
+      title: "Orchestrator Agent",
+      description: "Empowers product managers and admins with coordinated development and QA testing capabilities for rapid deployment"
+    },
+    {
+      title: "Contextual Agent",
+      description: "Applies human-like reasoning and context to complement BFSI officials in complex decision-making processes"
+    },
+    {
+      title: "Safety Agent",
+      description: "Ensures human-in-the-loop oversight and maintains system integrity across all AI operations"
     }
   ];
 
   const faqs = [
     {
-      question: "What is AI CMO and how does it work?",
-      answer: "AI CMO is an intelligent marketing platform that acts as your virtual Chief Marketing Officer. It analyzes your business data, market trends, and customer behavior to provide actionable marketing insights and automate routine marketing tasks."
+      question: "Why do we need AI Coworkers?",
+      answer: "BFSI functions are manpower-heavy, creating multiple risk points and bottlenecks. AI Coworkers build consistency, reduce human error, and scale processes with limited resources while maintaining quality."
     },
     {
-      question: "Is AI CMO suitable for small businesses?",
-      answer: "Absolutely! AI CMO is specifically designed for SMBs and small brands. We understand the unique challenges small businesses face and provide enterprise-level marketing intelligence at an affordable price point."
+      question: "My systems are already automated. Do I still need AI Coworkers?",
+      answer: "AI Coworkers operate at a higher intelligence layer. While automation handles repetitive tasks, 20-50% of outputs still require manual review. Our agents apply contextual thinking to these cases, providing intelligent recommendations so BFSI officials can make faster, better-informed decisions."
     },
     {
-      question: "What kind of marketing insights can I expect?",
-      answer: "You'll get insights on customer segmentation, content performance, optimal posting times, trending topics in your industry, competitor analysis, and personalized recommendations to improve your marketing ROI."
+      question: "I don't want full automation - what if something goes wrong?",
+      answer: "We always maintain human-in-the-loop through our Safety Agent, which ensures AI suggestions are reviewed before execution. You remain in control while benefiting from AI intelligence."
     },
     {
-      question: "How quickly can I see results?",
-      answer: "Most users see initial insights within 24-48 hours of setup. Comprehensive trend analysis and deeper insights develop over 2-4 weeks as our AI learns more about your business and audience."
+      question: "What about data security and compliance?",
+      answer: "Absolutely secure. All regulatory requirements are strictly followed, with enterprise-grade encryption and compliance measures integrated into our multi-LLM architecture for BFSI operations."
     },
     {
-      question: "Do I need technical expertise to use AI CMO?",
-      answer: "Not at all! AI CMO is designed to be user-friendly with an intuitive interface. Our AI chat assistant guides you through everything, and our support team is always ready to help."
-    },
-    {
-      question: "What's included in the pricing?",
-      answer: "Our plans include the AI chat assistant, trends engine, content calendar, analytics dashboard, and customer support. We offer flexible pricing tiers based on your business size and needs."
+      question: "How long until we see real outcomes?",
+      answer: "This depends on your specific structure and processes. We'd love to discuss your unique situation and provide a tailored timeline estimate for measurable results."
     }
   ];
 
@@ -71,21 +94,25 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Your AI-Powered
+              AI Coworker for your
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                {" "}Chief Marketing Officer
+                {" "}BFSI Segment
               </span>
+              {" "}to Scale
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Transform your marketing strategy with intelligent insights, automated content planning, 
-              and real-time trend analysis. Built specifically for SMBs and growing brands.
+              Deploy a swarm of AI Agents that build contextual intelligence across your operations. 
+              Get dedicated AI Co-pilots for specific BFSI functions—from customer acquisition to compliance, 
+              transforming how your financial services team works.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/signup">
-                <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                  Start Free Trial
-                </Button>
-              </Link>
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                onClick={() => window.open('https://wa.me/919876543210?text=Hello%20Prateek%2C%20I%20would%20like%20to%20discuss%20more%21', '_blank')}
+              >
+                Explore With Us
+              </Button>
               <Button size="lg" variant="outline">
                 Watch Demo
               </Button>
@@ -99,10 +126,10 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Everything You Need to Scale Your Marketing
+              Real Business Value Through AI Intelligence
             </h2>
             <p className="text-lg text-gray-600">
-              Our comprehensive AI platform covers all aspects of modern marketing
+              Measurable improvements your BFSI organization will experience with AI Coworkers
             </p>
           </div>
           
@@ -118,6 +145,35 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* AI Agents Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Meet Your AI Agent Team
+            </h2>
+            <p className="text-lg text-gray-600">
+              Specialized agents working together to transform your BFSI operations
+            </p>
+          </div>
+          
+          <div className="overflow-x-auto pb-4">
+            <div className="flex gap-6 min-w-max px-4">
+              {agents.map((agent, index) => (
+                <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 w-80 flex-shrink-0">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-semibold mb-3 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                      {agent.title}
+                    </h3>
+                    <p className="text-gray-600">{agent.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -153,16 +209,19 @@ const Index = () => {
       <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Transform Your Marketing?
+            Ready to Transform Your BFSI Operations?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Join hundreds of growing businesses already using AI CMO
+            Join forward-thinking financial institutions already scaling with AI intelligence
           </p>
-          <Link to="/signup">
-            <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
-              Get Started Today
-            </Button>
-          </Link>
+          <Button 
+            size="lg" 
+            variant="secondary" 
+            className="bg-white text-blue-600 hover:bg-gray-100"
+            onClick={() => window.open('https://wa.me/917381732333', '_blank')}
+          >
+            Let's Get Started
+          </Button>
         </div>
       </section>
 

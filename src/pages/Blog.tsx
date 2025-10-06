@@ -7,68 +7,68 @@ import Footer from "@/components/Footer";
 
 const Blog = () => {
   const featuredPost = {
-    title: "The Future of AI in Marketing: 2024 Trends and Predictions",
-    excerpt: "Discover how artificial intelligence is reshaping marketing strategies and what SMBs need to know to stay competitive in the evolving digital landscape.",
-    author: "Sarah Chen",
-    date: "March 15, 2024",
+    title: "The Future of AI Agents in BFSI: 2025 Transformation",
+    excerpt: "Discover how AI agent swarms are revolutionizing banking and financial services operations through contextual intelligence.",
+    author: "P A",
+    date: "July 2025",
     readTime: "8 min read",
-    category: "AI & Technology",
+    category: "AI & BFSI",
     image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=400&fit=crop"
   };
 
   const blogPosts = [
     {
-      title: "10 Marketing Automation Strategies That Drive Results",
-      excerpt: "Learn proven automation tactics that help SMBs scale their marketing efforts without increasing overhead costs.",
-      author: "Marcus Rodriguez",
-      date: "March 12, 2024",
+      title: "10 AI Agent Strategies for BFSI Transformation",
+      excerpt: "Learn proven tactics for deploying AI agents that scale BFSI operations without proportional cost increases.",
+      author: "P A",
+      date: "July 2025",
       readTime: "6 min read",
-      category: "Marketing Strategy",
+      category: "AI Strategy",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop"
     },
     {
-      title: "Content Calendar Mastery: Planning for Maximum Impact",
-      excerpt: "How to create and manage a content calendar that consistently delivers engaging content and drives audience growth.",
-      author: "Emily Watson",
-      date: "March 10, 2024",
+      title: "Compliance Automation: The Safety Agent Advantage",
+      excerpt: "How human-in-the-loop AI maintains regulatory compliance while accelerating operations in financial services.",
+      author: "P A",
+      date: "July 2025",
       readTime: "5 min read",
-      category: "Content Marketing",
+      category: "Compliance",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop"
     },
     {
-      title: "ROI Tracking: Measuring What Matters in Digital Marketing",
-      excerpt: "Essential metrics and KPIs every SMB should track to ensure their marketing budget is working effectively.",
-      author: "Sarah Chen",
-      date: "March 8, 2024",
+      title: "Measuring ROI: AI Agent Impact on BFSI Metrics",
+      excerpt: "Essential KPIs every BFSI organization should track when deploying AI Coworkers across operations.",
+      author: "P A",
+      date: "July 2025",
       readTime: "7 min read",
       category: "Analytics",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=250&fit=crop"
     },
     {
-      title: "Social Media Trends That Will Dominate 2024",
-      excerpt: "Stay ahead of the curve with insights into the social media trends that will shape brand engagement this year.",
-      author: "Marcus Rodriguez",
-      date: "March 5, 2024",
+      title: "Customer Acquisition Trends in Digital Banking 2025",
+      excerpt: "Stay ahead with insights into how Discovery and Win Agents are reshaping customer acquisition strategies.",
+      author: "P A",
+      date: "July 2025",
       readTime: "4 min read",
-      category: "Social Media",
+      category: "Customer Growth",
       image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=250&fit=crop"
     },
     {
-      title: "Email Marketing Renaissance: Why It's More Important Than Ever",
-      excerpt: "Discover how modern email marketing strategies can deliver exceptional ROI in an increasingly crowded digital space.",
-      author: "Emily Watson",
-      date: "March 3, 2024",
+      title: "LOS Agent Revolution: Faster Loan Processing",
+      excerpt: "Discover how AI-powered loan origination systems are delivering 5x faster processing with better accuracy.",
+      author: "P A",
+      date: "July 2025",
       readTime: "6 min read",
-      category: "Email Marketing",
+      category: "Operations",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=250&fit=crop"
     },
     {
-      title: "Customer Segmentation Strategies for Small Businesses",
-      excerpt: "Learn how to effectively segment your audience to deliver personalized experiences that drive conversions.",
-      author: "Sarah Chen",
-      date: "February 28, 2024",
+      title: "Contextual Intelligence: The Future of BFSI Decision Making",
+      excerpt: "Learn how contextual agents complement human expertise to enable faster, more accurate financial decisions.",
+      author: "P A",
+      date: "July 2025",
       readTime: "5 min read",
-      category: "Customer Experience",
+      category: "AI Intelligence",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop"
     }
   ];
@@ -169,8 +169,8 @@ const Blog = () => {
                         {featuredPost.readTime}
                       </div>
                     </div>
-                    <Button variant="ghost" className="text-blue-600 hover:text-blue-700">
-                      Read More
+                    <Button variant="ghost" className="text-blue-600 hover:text-blue-700" disabled>
+                      Upcoming
                       <ArrowRight className="h-4 w-4 ml-1" />
                     </Button>
                   </div>
