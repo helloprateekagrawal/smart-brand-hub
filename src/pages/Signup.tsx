@@ -55,7 +55,7 @@ const Signup = () => {
                 <Zap className="h-6 w-6 text-white" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                wingso.ai
+                www.silversuits.ai
               </span>
             </Link>
 
@@ -81,7 +81,7 @@ const Signup = () => {
             <CardTitle className="text-2xl font-bold text-gray-900">
               Create Your Account
             </CardTitle>
-            <p className="text-gray-600">Join wingso.ai to transform your marketing</p>
+            <p className="text-gray-600">Join www.silversuits.ai to transform your marketing</p>
           </CardHeader>
           <CardContent className="space-y-4">
             {/* Company Name */}

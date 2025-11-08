@@ -47,7 +47,7 @@ const MainApp = () => {
                 <Zap className="h-6 w-6 text-white" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                wingso.ai
+                www.silversuits.ai
               </span>
             </div>
 
@@ -81,7 +81,7 @@ const MainApp = () => {
         {/* Welcome Section */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            Welcome to wingso.ai
+            Welcome to www.silversuits.ai
           </h1>
           <p className="text-lg text-gray-600">
             Your AI-powered marketing intelligence platform is ready to help you grow your business.

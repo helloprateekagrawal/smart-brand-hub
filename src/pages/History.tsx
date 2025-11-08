@@ -102,7 +102,7 @@ const History = () => {
                 <Zap className="h-6 w-6 text-white" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                wingso.ai
+                www.silversuits.ai
               </span>
             </Link>
 
@@ -246,7 +246,7 @@ const History = () => {
                           <div className="bg-white border rounded-lg overflow-hidden shadow-sm">
                             <div className="flex items-center p-3 border-b">
                               <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mr-3"></div>
-                              <span className="font-semibold">wingso.ai</span>
+                              <span className="font-semibold">www.silversuits.ai</span>
                             </div>
                             <img src={campaign.image} alt="Instagram post" className="w-full" />
                             <div className="p-3">

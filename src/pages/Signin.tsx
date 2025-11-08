@@ -44,7 +44,7 @@ const Signin = () => {
                 <Zap className="h-6 w-6 text-white" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                wingso.ai
+                www.silversuits.ai
               </span>
             </Link>
 
@@ -70,7 +70,7 @@ const Signin = () => {
             <CardTitle className="text-2xl font-bold text-gray-900">
               Welcome Back
             </CardTitle>
-            <p className="text-gray-600">Sign in to your wingso.ai account</p>
+            <p className="text-gray-600">Sign in to your www.silversuits.ai account</p>
           </CardHeader>
           <CardContent>
             <Tabs defaultValue="password" className="space-y-4">
