@@ -94,22 +94,22 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              AI Coworker for your
+              AI Coworkers for your
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 {" "}BFSI Segment
               </span>
               {" "}to Scale
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Deploy a swarm of AI Agents that build contextual intelligence across your operations. 
-              Get dedicated AI Co-pilots for specific BFSI functions—from customer acquisition to compliance, 
-              transforming how your financial services team works.
+              We deploy a swarm of AI Agents that build contextual intelligence for your BFSI operations. 
+              These AI Coworkers work alongside your team, understanding the nuances of your business to deliver 
+              measurable results across every function—from customer acquisition to compliance.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
-                onClick={() => window.open('https://wa.me/919876543210?text=Hello%20Prateek%2C%20I%20would%20like%20to%20discuss%20more%21', '_blank')}
+                onClick={() => window.open('https://wa.me/917381732333?text=Hello%20Prateek.%20I%20would%20like%20to%20discuss%20more%20about%20the%20%22contextual%20intelligence%22%20solution', '_blank')}
               >
                 Explore With Us
               </Button>
@@ -218,7 +218,7 @@ const Index = () => {
             size="lg" 
             variant="secondary" 
             className="bg-white text-blue-600 hover:bg-gray-100"
-            onClick={() => window.open('https://wa.me/917381732333', '_blank')}
+            onClick={() => window.open('https://wa.me/917381732333?text=Hello%20Prateek.%20I%20would%20like%20to%20discuss%20more%20about%20the%20%22contextual%20intelligence%22%20solution', '_blank')}
           >
             Let's Get Started
           </Button>

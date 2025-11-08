@@ -156,7 +156,7 @@ const About = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-              onClick={() => window.open('https://wa.me/919876543210?text=Hello%20Prateek%2C%20I%20would%20like%20to%20discuss%20more%21', '_blank')}
+              onClick={() => window.open('https://wa.me/917381732333?text=Hello%20Prateek.%20I%20would%20like%20to%20discuss%20more%20about%20the%20%22contextual%20intelligence%22%20solution', '_blank')}
             >
               Let's Get Started
             </button>

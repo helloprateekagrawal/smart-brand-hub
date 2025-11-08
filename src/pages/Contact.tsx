@@ -146,7 +146,10 @@ const Contact = () => {
                   />
                 </div>
                 
-                <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+                <Button 
+                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                  onClick={() => window.open('https://wa.me/917381732333?text=Hello%20Prateek.%20I%20would%20like%20to%20discuss%20more%20about%20the%20%22contextual%20intelligence%22%20solution', '_blank')}
+                >
                   <Send className="h-4 w-4 mr-2" />
                   Send Message
                 </Button>
@@ -232,8 +235,13 @@ const Contact = () => {
           <p className="text-xl text-blue-100 mb-8">
             Don't wait - transform your marketing strategy today
           </p>
-          <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
-            Start Your Free Trial
+          <Button 
+            size="lg" 
+            variant="secondary" 
+            className="bg-white text-blue-600 hover:bg-gray-100"
+            onClick={() => window.open('https://wa.me/917381732333?text=Hello%20Prateek.%20I%20would%20like%20to%20discuss%20more%20about%20the%20%22contextual%20intelligence%22%20solution', '_blank')}
+          >
+            Explore With Us
           </Button>
         </div>
       </section>
