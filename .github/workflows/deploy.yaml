@@ -1,5 +1,4 @@
-# .github/workflows/deploy.yml (use this instead of peaceiris push)
-name: Deploy static site to GitHub Pages
+name: Build and deploy (GitHub Pages via Pages API)
 
 on:
   push:
@@ -7,28 +6,36 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  pages: write
+  contents: write     # for actions/checkout and repo reads if needed
+  pages: write        # required for deploy-pages
+  id-token: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository (full)
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: true
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: Install deps
+      - name: Install dependencies
         run: npm ci
 
       - name: Build
         run: npm run build
+
+      - name: Ensure dist exists
+        run: |
+          ls -la
+          ls -la dist || (echo "dist directory missing — build failed" && exit 1)
 
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v1
