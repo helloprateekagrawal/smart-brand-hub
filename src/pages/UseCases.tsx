@@ -3,8 +3,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useNavigate } from "react-router-dom";
 
 const UseCases = () => {
+  const navigate = useNavigate();
+  
   const useCases = [
     {
       icon: UserPlus,
@@ -139,7 +142,7 @@ const UseCases = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4 text-center">{useCase.description}</p>
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 mb-4">
                     {useCase.details.map((detail, detailIndex) => (
                       <li key={detailIndex} className="flex items-start gap-2">
                         <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
@@ -147,6 +150,19 @@ const UseCases = () => {
                       </li>
                     ))}
                   </ul>
+                  <div className="text-center mt-6">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => {
+                        if (useCase.title === "Onboarding Accelerator") {
+                          navigate('/onboarding-accelerator');
+                        }
+                      }}
+                    >
+                      Learn More
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             ))}
