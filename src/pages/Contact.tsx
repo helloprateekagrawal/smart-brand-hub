@@ -14,7 +14,7 @@ const Contact = () => {
       icon: Mail,
       title: "Email Us",
       description: "Get in touch with our team",
-      detail: "hello@silversuits.ai",
+      detail: "prateek@silversuits.ai",
       action: "Send Email"
     },
     {
@@ -156,12 +156,12 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            {/* Office Info & Map */}
+            {/* Office Info */}
             <div className="space-y-8">
               <Card className="border-0 shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-2xl">Visit Our Office</CardTitle>
-                  <p className="text-gray-600">We'd love to meet you in person at our San Francisco headquarters.</p>
+                  <p className="text-gray-600">We'd love to meet you in person.</p>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   {officeInfo.map((info, index) => (
@@ -177,50 +177,6 @@ const Contact = () => {
                   ))}
                 </CardContent>
               </Card>
-
-              {/* Map Placeholder */}
-              <Card className="border-0 shadow-lg overflow-hidden">
-                <div className="h-64 bg-gray-300 flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="h-12 w-12 text-gray-500 mx-auto mb-2" />
-                    <p className="text-gray-600">Interactive Map</p>
-                    <p className="text-sm text-gray-500">San Francisco, CA</p>
-                  </div>
-                </div>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-lg text-gray-600">
-              Quick answers to common questions about getting started
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-lg font-semibold mb-2">How quickly can I get started?</h3>
-              <p className="text-gray-600">You can start using AI CMO immediately after signing up. Our onboarding process takes less than 10 minutes.</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Do you offer customer support?</h3>
-              <p className="text-gray-600">Yes, we provide 24/7 customer support via chat, email, and phone for all our users.</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Is there a free trial?</h3>
-              <p className="text-gray-600">Absolutely! We offer a 14-day free trial with full access to all features.</p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Can I cancel anytime?</h3>
-              <p className="text-gray-600">Yes, you can cancel your subscription at any time with no cancellation fees.</p>
             </div>
           </div>
         </div>

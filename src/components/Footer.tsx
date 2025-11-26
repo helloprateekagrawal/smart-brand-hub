@@ -1,5 +1,5 @@
 
-import { Zap, Mail, Phone, MapPin, Twitter, Linkedin, Facebook } from "lucide-react";
+import { Zap, Mail, Phone, MapPin, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -20,14 +20,8 @@ const Footer = () => {
               Transforming financial services through intelligent agent swarms.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/silver-suits-ai/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -51,11 +45,6 @@ const Footer = () => {
                   Use Cases
                 </Link>
               </li>
-              <li>
-                <Link to="/blog" className="text-gray-300 hover:text-white transition-colors">
-                  Blog
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -65,7 +54,7 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-gray-300">
                 <Mail className="h-4 w-4" />
-                <span>hello@silversuits.ai</span>
+                <span>prateek@silversuits.ai</span>
               </div>
               <div className="flex items-center space-x-2 text-gray-300">
                 <Phone className="h-4 w-4" />

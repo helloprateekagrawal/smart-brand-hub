@@ -7,74 +7,74 @@ import Footer from "@/components/Footer";
 const UseCases = () => {
   const useCases = [
     {
-      icon: FileCheck,
-      title: "LOS Agent",
-      description: "Streamline loan origination with intelligent document processing and risk assessment",
+      icon: UserPlus,
+      title: "Onboarding Accelerator",
+      description: "Speed up customer onboarding with contextual AI that understands and resolves user issues in real-time",
       details: [
-        "Automated document verification",
-        "Credit risk analysis and scoring",
-        "Fraud detection capabilities",
-        "Faster application processing"
+        "Contextual understanding of users",
+        "Instantly follow up with dropped off users",
+        "Resolve user issues in real-time",
+        "Deploy human-ly AI agents"
       ],
       popular: true
     },
     {
-      icon: Shield,
-      title: "Compliance Agent",
-      description: "Ensure regulatory adherence with AI-powered compliance monitoring and reporting",
+      icon: FileCheck,
+      title: "LOS Agent",
+      description: "Streamline loan origination with contextual intelligence that reduces manual intervention",
       details: [
-        "Real-time regulatory updates",
-        "Automated compliance checks",
-        "Audit trail generation",
-        "Risk mitigation recommendations"
+        "Contextual document analysis beyond rules",
+        "AI-powered risk assessment with reasoning",
+        "Intelligent fraud pattern detection",
+        "Automated decision recommendations"
       ],
       popular: false
     },
     {
-      icon: UserPlus,
-      title: "Onboarding Accelerator",
-      description: "Speed up customer onboarding with intelligent KYC and verification processes",
+      icon: Shield,
+      title: "Compliance Agent",
+      description: "Contextual AI ensures regulatory adherence by understanding the nuances of each case",
       details: [
-        "Digital KYC automation",
-        "Identity verification",
-        "Document authenticity checks",
-        "Reduced onboarding time"
+        "Context-aware compliance monitoring",
+        "Intelligent regulation interpretation",
+        "Automated contextual audit trails",
+        "Smart risk mitigation suggestions"
       ],
       popular: false
     },
     {
       icon: Headphones,
       title: "Customer Support Agent",
-      description: "Enhance customer experience with 24/7 intelligent support and query resolution",
+      description: "Contextual AI provides 24/7 support with deep understanding of customer history and needs",
       details: [
-        "Natural language understanding",
-        "Contextual response generation",
-        "Multi-channel support",
-        "Sentiment analysis"
+        "Context-aware conversation handling",
+        "Personalized response generation",
+        "Intelligent query routing",
+        "Reduced manual support intervention"
       ],
       popular: false
     },
     {
       icon: Building2,
       title: "Commercial Insurance Agent",
-      description: "Optimize insurance underwriting and claims processing with AI intelligence",
+      description: "Contextual intelligence optimizes underwriting by understanding business nuances beyond data points",
       details: [
-        "Risk assessment automation",
-        "Claims validation",
-        "Policy recommendation engine",
-        "Fraud detection"
+        "Contextual risk evaluation",
+        "Intelligent claims assessment",
+        "Smart policy recommendations",
+        "Pattern-based fraud detection"
       ],
-      popular: true
+      popular: false
     },
     {
       icon: Rocket,
       title: "Go-to-PROD Agent",
-      description: "Accelerate development cycles with integrated development and QA testing capabilities",
+      description: "Contextual AI accelerates development by understanding code intent and business requirements",
       details: [
-        "Automated code testing",
-        "Bug detection and reporting",
-        "Deployment validation",
-        "Quality assurance automation"
+        "Context-aware code testing",
+        "Intelligent bug prediction",
+        "Smart deployment decisions",
+        "Reduced manual QA intervention"
       ],
       popular: false
     }
