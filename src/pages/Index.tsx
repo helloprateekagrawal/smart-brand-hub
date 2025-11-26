@@ -121,12 +121,83 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Context is the New API Section */}
+      <section className="py-16 bg-gradient-to-br from-purple-50 via-white to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Main heading */}
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Context is the
+                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  {" "}New API
+                </span>
+              </h2>
+              <p className="text-xl text-gray-600 italic">— Andrej Karpathy</p>
+            </div>
+
+            {/* Right side - Description and Examples */}
+            <div className="space-y-6">
+              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">We Don't Just Give You Numbers</h3>
+                <p className="text-gray-600">We build stories on top of it, providing contextual intelligence that matters.</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h4 className="text-md font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                  <span className="bg-green-100 text-green-600 px-2 py-1 rounded text-xs">Example 1</span>
+                  Business Application Assessment
+                </h4>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-2">
+                    <div className="bg-red-100 text-red-600 px-2 py-1 rounded text-xs mt-0.5">Hard-coded</div>
+                    <p className="text-gray-600">"Revenue dropped in last 3 months - risky business"</p>
+                  </div>
+                  <div className="flex items-center gap-2 my-2">
+                    <div className="h-px flex-1 bg-gradient-to-r from-blue-600 to-purple-600"></div>
+                    <span className="text-xs text-gray-500">Contextual AI analyzes</span>
+                    <div className="h-px flex-1 bg-gradient-to-r from-purple-600 to-blue-600"></div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="bg-green-100 text-green-600 px-2 py-1 rounded text-xs mt-0.5">Contextual</div>
+                    <p className="text-gray-600">"Seasonal Business - OK to approve"</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h4 className="text-md font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                  <span className="bg-green-100 text-green-600 px-2 py-1 rounded text-xs">Example 2</span>
+                  User Drop-off Resolution
+                </h4>
+                <div className="space-y-3 text-sm">
+                  <p className="text-gray-600">User dropped off at "address details" field</p>
+                  <div className="flex items-center gap-2 my-2">
+                    <div className="h-px flex-1 bg-gradient-to-r from-blue-600 to-purple-600"></div>
+                    <span className="text-xs text-gray-500">Contextual AI reads available info</span>
+                    <div className="h-px flex-1 bg-gradient-to-r from-purple-600 to-blue-600"></div>
+                  </div>
+                  <p className="text-gray-600 flex items-center gap-2">
+                    <MessageCircle className="h-4 w-4 text-blue-600" />
+                    Voice AI calls user and resolves confusion (temporary vs permanent address)
+                  </p>
+                  <div className="flex items-center gap-2 mt-2">
+                    <TrendingUp className="h-4 w-4 text-green-600" />
+                    <p className="text-green-600 font-semibold">Jump in number of applications</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Preview */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Real Business Value Through AI Intelligence
+              Real Business Value Through Contextual AI
             </h2>
             <p className="text-lg text-gray-600">
               Measurable improvements your BFSI organization will experience with AI Coworkers
@@ -149,8 +220,43 @@ const Index = () => {
         </div>
       </section>
 
-      {/* AI Agents Section */}
+      {/* How Contextual AI Works Section */}
       <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              How Contextual AI Works
+            </h2>
+            <p className="text-lg text-gray-600">
+              Training our swarm of AI Agents with comprehensive data sources
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {[
+              { title: "Past Records & Trends", description: "Historical data patterns and insights" },
+              { title: "Account Aggregator", description: "Optional financial data integration" },
+              { title: "Current Application(s)", description: "Real-time application data" },
+              { title: "Web Search", description: "External market intelligence" },
+              { title: "Officer Notes", description: "Expert human observations" },
+              { title: "Organizational Database", description: "Internal knowledge systems" }
+            ].map((source, index) => (
+              <Card key={index} className="border-0 shadow-md hover:shadow-lg transition-shadow duration-300">
+                <CardContent className="p-6 text-center">
+                  <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-full w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+                    <BarChart3 className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="text-md font-semibold mb-1 text-gray-900">{source.title}</h3>
+                  <p className="text-sm text-gray-600">{source.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* AI Agents Section */}
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -179,7 +285,7 @@ const Index = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
