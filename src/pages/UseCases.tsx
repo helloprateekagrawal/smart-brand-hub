@@ -157,6 +157,7 @@ const UseCases = () => {
                       onClick={() => {
                         if (useCase.title === "Onboarding Accelerator") {
                           navigate('/onboarding-accelerator');
+                          window.scrollTo(0, 0);
                         }
                       }}
                     >
