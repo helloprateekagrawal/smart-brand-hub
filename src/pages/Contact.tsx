@@ -21,7 +21,7 @@ const Contact = () => {
       icon: Phone,
       title: "Call Us",
       description: "Speak with our experts",
-      detail: "+91 738 173 2333",
+      detail: "+91-7381732333",
       action: "Call Now"
     },
     {
