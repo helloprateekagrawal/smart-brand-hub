@@ -59,17 +59,17 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-muted via-background to-accent/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               Get in Touch
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               Have questions about AI Agents for BFSI? We'd love to hear from you. 
               Our team is here to help you transform your financial services operations.
             </p>
@@ -78,18 +78,18 @@ const Contact = () => {
       </section>
 
       {/* Contact Methods */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {contactMethods.map((method, index) => (
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
                 <CardContent className="p-6">
-                  <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-3 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <div className="gradient-brand p-3 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                     <method.icon className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">{method.title}</h3>
-                  <p className="text-gray-600 mb-2">{method.description}</p>
-                  <p className="text-blue-600 font-medium mb-4">{method.detail}</p>
+                  <h3 className="text-lg font-semibold mb-2 text-card-foreground">{method.title}</h3>
+                  <p className="text-muted-foreground mb-2">{method.description}</p>
+                  <p className="text-primary font-medium mb-4">{method.detail}</p>
                   <Button variant="outline" size="sm" className="w-full">
                     {method.action}
                   </Button>
@@ -101,14 +101,14 @@ const Contact = () => {
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <Card className="border-0 shadow-lg">
               <CardHeader>
                 <CardTitle className="text-2xl">Send us a Message</CardTitle>
-                <p className="text-gray-600">Fill out the form below and we'll get back to you within 24 hours.</p>
+                <p className="text-muted-foreground">Fill out the form below and we'll get back to you within 24 hours.</p>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -147,7 +147,7 @@ const Contact = () => {
                 </div>
                 
                 <Button 
-                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                  className="w-full gradient-brand hover:gradient-brand-hover text-white"
                   onClick={() => window.open('https://wa.me/917381732333?text=Hello%20Prateek.%20I%20would%20like%20to%20discuss%20more%20about%20the%20%22contextual%20intelligence%22%20solution', '_blank')}
                 >
                   <Send className="h-4 w-4 mr-2" />
@@ -161,17 +161,17 @@ const Contact = () => {
               <Card className="border-0 shadow-lg">
                 <CardHeader>
                   <CardTitle className="text-2xl">Visit Our Office</CardTitle>
-                  <p className="text-gray-600">We'd love to meet you in person.</p>
+                  <p className="text-muted-foreground">We'd love to meet you in person.</p>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   {officeInfo.map((info, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <div className="bg-blue-100 p-2 rounded-lg">
-                        <info.icon className="h-5 w-5 text-blue-600" />
+                      <div className="bg-primary/10 p-2 rounded-lg">
+                        <info.icon className="h-5 w-5 text-primary" />
                       </div>
                       <div>
-                        <p className="font-medium text-gray-900">{info.label}</p>
-                        <p className="text-gray-600">{info.value}</p>
+                        <p className="font-medium text-card-foreground">{info.label}</p>
+                        <p className="text-muted-foreground">{info.value}</p>
                       </div>
                     </div>
                   ))}
@@ -183,18 +183,18 @@ const Contact = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-16 gradient-brand">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Ready to Get Started?
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-white/80 mb-8">
             Don't wait - transform your marketing strategy today
           </p>
           <Button 
             size="lg" 
             variant="secondary" 
-            className="bg-white text-blue-600 hover:bg-gray-100"
+            className="bg-white text-primary hover:bg-white/90"
             onClick={() => window.open('https://wa.me/917381732333?text=Hello%20Prateek.%20I%20would%20like%20to%20discuss%20more%20about%20the%20%22contextual%20intelligence%22%20solution', '_blank')}
           >
             Explore With Us
