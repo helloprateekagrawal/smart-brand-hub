@@ -18,7 +18,7 @@ export default {
 			}
 		},
 		extend: {
-			colors: {
+		colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -51,6 +51,11 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				brand: {
+					blue: 'hsl(var(--brand-blue))',
+					purple: 'hsl(var(--brand-purple))',
+					'purple-dark': 'hsl(var(--brand-purple-dark))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
