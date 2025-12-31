@@ -44,7 +44,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Address",
-      value: "Level 2, Imperium Building, Vijay Nagar, MIDC, Marol, Andheri East, Mumbai - 400059"
+      value: "235, Binnamangala, 2nd Floor, 13th Cross Road, 2nd Stage, Indira Nagar, Bengaluru - 560038"
     },
     {
       icon: Clock,
@@ -141,7 +141,7 @@ const Contact = () => {
                   <Label htmlFor="message">Message *</Label>
                   <Textarea 
                     id="message" 
-                    placeholder="Tell us more about your marketing challenges and goals..."
+                    placeholder="Tell us more about your challenges and goals..."
                     className="mt-1 min-h-32"
                   />
                 </div>
@@ -189,7 +189,7 @@ const Contact = () => {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-white/80 mb-8">
-            Don't wait - transform your marketing strategy today
+            Don't wait - transform your strategy today
           </p>
           <Button 
             size="lg" 

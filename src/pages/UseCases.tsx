@@ -14,12 +14,13 @@ const UseCases = () => {
       title: "Onboarding Accelerator",
       description: "Speed up customer onboarding with contextual AI that understands and resolves user issues in real-time",
       details: [
-        "Contextual understanding of users",
+        "Make 30% more revenue with 20% lower cost",
         "Instantly follow up with dropped off users",
         "Resolve user issues in real-time",
         "Deploy human-ly AI agents"
       ],
-      popular: true
+      popular: true,
+      highlightFirst: true
     },
     {
       icon: FileCheck,
@@ -146,7 +147,7 @@ const UseCases = () => {
                     {useCase.details.map((detail, detailIndex) => (
                       <li key={detailIndex} className="flex items-start gap-2">
                         <CheckCircle className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span className="text-sm text-muted-foreground">{detail}</span>
+                        <span className={`text-sm ${(useCase as any).highlightFirst && detailIndex === 0 ? 'text-primary font-semibold' : 'text-muted-foreground'}`}>{detail}</span>
                       </li>
                     ))}
                   </ul>

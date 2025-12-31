@@ -19,13 +19,13 @@
     --primary: 201 100% 14%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 270 50% 60%;
+    --secondary: 201 100% 14%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 201 30% 95%;
     --muted-foreground: 201 20% 40%;
 
-    --accent: 270 50% 60%;
+    --accent: 201 100% 14%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -39,17 +39,16 @@
 
     /* Brand colors */
     --brand-blue: 201 100% 14%;
-    --brand-purple: 270 50% 60%;
-    --brand-purple-dark: 270 50% 45%;
+    --brand-blue-light: 201 80% 25%;
 
     --sidebar-background: 201 100% 14%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 270 50% 60%;
+    --sidebar-primary: 201 100% 14%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 201 80% 20%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 201 80% 20%;
-    --sidebar-ring: 270 50% 60%;
+    --sidebar-ring: 201 100% 14%;
   }
 
   .dark {
@@ -65,13 +64,13 @@
     --primary: 0 0% 98%;
     --primary-foreground: 201 100% 14%;
 
-    --secondary: 270 50% 60%;
+    --secondary: 201 100% 14%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 201 50% 18%;
     --muted-foreground: 201 20% 70%;
 
-    --accent: 270 50% 60%;
+    --accent: 201 100% 14%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
@@ -83,17 +82,16 @@
 
     /* Brand colors */
     --brand-blue: 201 100% 14%;
-    --brand-purple: 270 50% 60%;
-    --brand-purple-dark: 270 50% 45%;
+    --brand-blue-light: 201 80% 25%;
 
     --sidebar-background: 201 100% 8%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 270 50% 60%;
+    --sidebar-primary: 201 100% 14%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 201 80% 15%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 201 80% 15%;
-    --sidebar-ring: 270 50% 60%;
+    --sidebar-ring: 201 100% 14%;
   }
 }
 
@@ -131,13 +129,13 @@ html {
 
 /* Custom gradient backgrounds */
 .gradient-bg {
-  background: linear-gradient(135deg, hsl(var(--brand-blue)) 0%, hsl(var(--brand-purple)) 100%);
+  background: hsl(var(--brand-blue));
 }
 
 .gradient-brand {
-  background: linear-gradient(135deg, hsl(201, 100%, 14%) 0%, hsl(270, 50%, 60%) 100%);
+  background: hsl(201, 100%, 14%);
 }
 
 .gradient-brand-hover {
-  background: linear-gradient(135deg, hsl(201, 100%, 10%) 0%, hsl(270, 50%, 45%) 100%);
+  background: hsl(201, 100%, 10%);
 }
