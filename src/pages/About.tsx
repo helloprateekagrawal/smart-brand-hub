@@ -8,23 +8,23 @@ const About = () => {
   const values = [
     {
       icon: Target,
-      title: "Mission-Driven",
-      description: "Democratizing enterprise-level marketing intelligence for small and medium businesses"
+      title: "Contextual Intelligence",
+      description: "Building AI Coworkers that understand the nuances of BFSI operations beyond rules and automation"
     },
     {
       icon: Lightbulb,
       title: "Innovation First",
-      description: "Leveraging cutting-edge AI to solve real marketing challenges faced by growing businesses"
+      description: "Leveraging cutting-edge AI to solve real challenges faced by financial institutions"
     },
     {
       icon: Users,
-      title: "Customer-Centric",
-      description: "Building solutions that truly understand and address the unique needs of SMBs"
+      title: "Human-AI Collaboration",
+      description: "Empowering BFSI professionals with AI that complements human decision-making"
     },
     {
       icon: Award,
       title: "Excellence",
-      description: "Committed to delivering exceptional results and continuous improvement"
+      description: "Committed to delivering exceptional results through intelligent automation"
     }
   ];
 
@@ -32,17 +32,12 @@ const About = () => {
     {
       name: "Prateek Agrawal",
       role: "CEO & Co-Founder",
-      description: "2+ years of experience as Product Manager, B.Tech from IIT Madras"
+      description: "2+ years of experience as Product Manager | National Winner in Denmark | NUS | B.Tech from IIT Madras"
     },
     {
-      name: "To be announced",
+      name: "Pratham Goyal",
       role: "CTO & Co-Founder", 
-      description: "Details coming soon"
-    },
-    {
-      name: "To be announced",
-      role: "CPO & Co-Founder",
-      description: "Details coming soon"
+      description: "2+ years of experience as Software Developer | Microsoft | Maverick Derivatives | B.Tech from IIT Roorkee"
     }
   ];
 
@@ -80,7 +75,7 @@ const About = () => {
             
             <p className="text-lg leading-relaxed mb-6">
               Having witnessed the massive potential of AI in transforming financial services operations, our team—led by 
-              <span className="font-semibold text-foreground"> IIT Madras</span> alumni—set out to democratize enterprise-grade AI intelligence 
+              <span className="font-semibold text-foreground"> IIT Madras and IIT Roorkee</span> alumni—set out to democratize enterprise-grade AI intelligence 
               for BFSI organizations of all sizes.
             </p>
             

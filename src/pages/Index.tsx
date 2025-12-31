@@ -1,4 +1,4 @@
-import { ChevronDown, CheckCircle, MessageCircle, TrendingUp, Calendar, BarChart3, DollarSign, Users } from "lucide-react";
+import { ChevronDown, CheckCircle, MessageCircle, TrendingUp, TrendingDown, Calendar, BarChart3, DollarSign, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -94,7 +94,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              AI Coworkers for your
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">AI</span> Coworkers for your
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 {" "}BFSI Segment
               </span>
@@ -161,6 +161,10 @@ const Index = () => {
                   <div className="flex items-start gap-2">
                     <div className="bg-green-100 text-green-600 px-2 py-1 rounded text-xs mt-0.5">Contextual</div>
                     <p className="text-muted-foreground">"Seasonal Business - OK to approve"</p>
+                  </div>
+                  <div className="flex items-center gap-2 mt-2">
+                    <TrendingDown className="h-4 w-4 text-green-600" />
+                    <p className="text-green-600 font-semibold">Reduction in manual reviews</p>
                   </div>
                 </div>
               </div>
@@ -291,9 +295,6 @@ const Index = () => {
             <h2 className="text-3xl font-bold text-foreground mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Everything you need to know about AI CMO
-            </p>
           </div>
           
           <Accordion type="single" collapsible className="w-full">
