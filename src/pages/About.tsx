@@ -120,21 +120,23 @@ const About = () => {
             <p className="text-lg text-muted-foreground">The experts behind silversuits.ai</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <Card key={index} className="border-0 shadow-lg">
-                <CardContent className="p-6 text-center">
-                  <div className="w-24 h-24 gradient-brand rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">
-                      {member.name === "To be announced" ? "TBA" : member.name.split(' ').map(n => n[0]).join('')}
-                    </span>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-1 text-card-foreground">{member.name}</h3>
-                  <p className="text-primary font-medium mb-3">{member.role}</p>
-                  <p className="text-muted-foreground">{member.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl">
+              {team.map((member, index) => (
+                <Card key={index} className="border-0 shadow-lg">
+                  <CardContent className="p-6 text-center">
+                    <div className="w-24 h-24 gradient-brand rounded-full mx-auto mb-4 flex items-center justify-center">
+                      <span className="text-2xl font-bold text-white">
+                        {member.name === "To be announced" ? "TBA" : member.name.split(' ').map(n => n[0]).join('')}
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-semibold mb-1 text-card-foreground">{member.name}</h3>
+                    <p className="text-primary font-medium mb-3">{member.role}</p>
+                    <p className="text-muted-foreground">{member.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
