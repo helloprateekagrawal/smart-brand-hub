@@ -1,7 +1,7 @@
 
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
-import logoFull from "@/assets/logo-full.png";
+import logoIcon from "@/assets/logo-icon.png";
 
 const Footer = () => {
   return (
@@ -10,8 +10,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center mb-4">
-              <img src={logoFull} alt="silversuits.ai" className="h-10" />
+            <div className="flex items-center gap-2 mb-4">
+              <img src={logoIcon} alt="silversuits.ai" className="h-10" />
+              <span className="text-white font-bold text-xl">silversuits.ai</span>
             </div>
             <p className="text-primary-foreground/80 mb-4 max-w-md">
               AI Coworkers for BFSI - Building contextual intelligence that scales. 
@@ -42,6 +43,16 @@ const Footer = () => {
                 <Link to="/use-cases" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                   Use Cases
                 </Link>
+              </li>
+              <li>
+                <a 
+                  href="https://mailchi.mp/22352757146f/general-newsletter" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  Newsletter
+                </a>
               </li>
             </ul>
           </div>

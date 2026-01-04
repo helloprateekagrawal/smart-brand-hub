@@ -94,11 +94,8 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">AI</span> Coworkers for your
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                {" "}BFSI Segment
-              </span>
-              {" "}to Scale
+              <span className="text-white bg-primary px-2 py-1 rounded">AI Coworkers</span> for your
+              <span className="text-white bg-primary px-2 py-1 rounded ml-2">BFSI</span> Segment to Scale
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               We deploy a swarm of AI Agents that build contextual intelligence for your BFSI operations. 
