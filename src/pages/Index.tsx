@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ChevronDown, CheckCircle, MessageCircle, TrendingUp, TrendingDown, Calendar, BarChart3, DollarSign, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -10,8 +11,13 @@ import {
 } from "@/components/ui/accordion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import {
+  Dialog,
+  DialogContent,
+} from "@/components/ui/dialog";
 
 const Index = () => {
+  const [demoOpen, setDemoOpen] = useState(false);
   const features = [
     {
       icon: TrendingUp,
@@ -110,9 +116,25 @@ const Index = () => {
               >
                 Explore With Us
               </Button>
-              <Button size="lg" variant="outline">
+              <Button size="lg" variant="outline" onClick={() => setDemoOpen(true)}>
                 Watch Demo
               </Button>
+
+              <Dialog open={demoOpen} onOpenChange={setDemoOpen}>
+                <DialogContent className="sm:max-w-[800px] p-0 overflow-hidden">
+                  <div className="aspect-video w-full">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={demoOpen ? "https://www.youtube.com/embed/QJXSXgvf4Ok?autoplay=1" : ""}
+                      title="Demo Video"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="border-0"
+                    />
+                  </div>
+                </DialogContent>
+              </Dialog>
             </div>
           </div>
         </div>
