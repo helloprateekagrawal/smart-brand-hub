@@ -1,6 +1,7 @@
 
 import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
+import logoIcon from "@/assets/logo-icon.png";
 
 const Footer = () => {
   return (
@@ -9,7 +10,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center mb-4">
+            <div className="flex items-center gap-2 mb-4">
+              <img src={logoIcon} alt="silversuits.ai" className="h-8 w-8" />
               <span className="text-white font-bold text-xl">silversuits.ai</span>
             </div>
             <p className="text-primary-foreground/80 mb-4 max-w-md">
