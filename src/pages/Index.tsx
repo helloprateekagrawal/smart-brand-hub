@@ -308,6 +308,38 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Our Advisor Section */}
+      <section className="py-16 bg-muted">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-4">
+              Our Advisor
+            </h2>
+          </div>
+          <div className="flex justify-center">
+            <Card className="border-0 shadow-lg w-72 text-center">
+              <CardContent className="p-6">
+                <img
+                  src={advisorNitish}
+                  alt="Nitish Nagori"
+                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+                />
+                <h3 className="text-xl font-semibold text-card-foreground mb-2">Nitish Nagori</h3>
+                <a
+                  href="https://www.linkedin.com/in/nitish-nagori-045b444/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-primary hover:underline"
+                >
+                  <Linkedin className="h-4 w-4" />
+                  LinkedIn
+                </a>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-16 bg-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
