@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { ChevronDown, CheckCircle, MessageCircle, TrendingUp, TrendingDown, Calendar, BarChart3, DollarSign, Users } from "lucide-react";
+import { ChevronDown, CheckCircle, MessageCircle, TrendingUp, TrendingDown, Calendar, BarChart3, DollarSign, Users, Linkedin } from "lucide-react";
+import advisorNitish from "@/assets/advisor-nitish.png";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
