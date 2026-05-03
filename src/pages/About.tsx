@@ -33,11 +33,6 @@ const About = () => {
       name: "Prateek Agrawal",
       role: "CEO & Co-Founder",
       description: "2+ years of experience as Product Manager | National Winner in Denmark | NUS | B.Tech from IIT Madras"
-    },
-    {
-      name: "Pratham Goyal",
-      role: "CTO & Co-Founder", 
-      description: "2+ years of experience as Software Developer | Microsoft | Maverick Derivatives | B.Tech from IIT Roorkee"
     }
   ];
 
