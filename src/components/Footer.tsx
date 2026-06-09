@@ -77,8 +77,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-primary-foreground/60">
+        <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center gap-2 text-primary-foreground/60">
           <p>&copy; 2025 silversuits.ai. All rights reserved.</p>
+          <Link to="/privacy" className="hover:text-primary-foreground transition-colors">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>

@@ -11,6 +11,7 @@ import UseCases from "./pages/UseCases";
 import OnboardingAccelerator from "./pages/OnboardingAccelerator";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
 import Signup from "./pages/Signup";
 import Signin from "./pages/Signin";
 import CompanyDetails from "./pages/CompanyDetails";
@@ -59,6 +60,7 @@ const App = () => (
           <Route path="/onboarding-accelerator" element={<OnboardingAccelerator />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/company-details" element={<CompanyDetails />} />
