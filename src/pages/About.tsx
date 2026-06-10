@@ -70,7 +70,7 @@ const About = () => {
             
             <p className="text-lg leading-relaxed mb-6">
               Having witnessed the massive potential of AI in transforming financial services operations, our team—led by 
-              <span className="font-semibold text-foreground"> IIT Madras and IIT Delhi</span> alumni—set out to democratize enterprise-grade AI intelligence 
+              <span className="font-semibold text-foreground"> IIT Madras and IIT Roorkee</span> alumni—set out to democratize enterprise-grade AI intelligence 
               for BFSI organizations of all sizes.
             </p>
             
